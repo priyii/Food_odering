@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.OrderNow{
+    background:url(Img/order-bg.jpg) no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-size: cover;
+    display: sticky;
+
+}
+.OrderNow form{
+    background:transparent;
+    border-radius: 2rem;
+    width: 50%;
+   margin-left: 2rem;
+    padding: 2rem;
+   
+}
+.OrderNow form .inputBox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.OrderNow form .inputBox input,
+.OrderNow form .inputBox select,
+.OrderNow form .inputBox textarea{
+    padding:0 1rem;
+    font-size: 1.7rem;
+    color:#333;
+    height:4rem;
+    width:49%;
+    margin:1rem 0;
+    border:.1rem solid #333;
+    border-radius: 1rem;
+}
+.OrderNow form .inputBox input:focus,
+.OrderNow form .inputBox select:focus,
+.OrderNow form .inputBox textarea:focus{
+    border:.2rem solid var(--red);
+}
+.OrderNow form .inputBox textarea{
+    height:6rem;
+    width: 100%;
+    padding:1rem;
+    resize: none;
+    border-radius: 1rem;
+}
+
+.OrderNow form .inputBox .btn{
+    border-radius: 1rem;
+    background:#fff;
+    width: 85%;
+    margin:2rem auto;
+    padding:2rem;
+    box-shadow: 0 .5rem 1rem #000;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+}
+
+@media (max-width:600px){
+
+    .OrderNow form .inputBox input,
+    .OrderNow form .inputBox select,
+    .OrderNow form .inputBox textarea,
+    .OrderNow form .inputBox #map{
+        width: 100%;
+    }
+
+}
+@media (max-width:400px){
+    .OrderNow form{
+        width: 95%;
+    }
+
+}
